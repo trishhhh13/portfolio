@@ -3,13 +3,14 @@ import React from 'react'
 import { BsGithub, BsInstagram, BsMailbox, BsWhatsapp } from 'react-icons/bs';
 import { CgMail } from 'react-icons/cg';
 import { LiaLinkedin } from 'react-icons/lia';
+import { SiLeetcode } from 'react-icons/si';
 
 const HANDLES = [
   {
     id: 1,
-    icon: BsInstagram,
+    icon: SiLeetcode,
     size: 24,
-    href: "https://www.instagram.com/trishhhh13/"
+    href: "https://leetcode.com/u/trishhhh_13/"
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const HANDLES = [
     id: 3,
     icon: BsGithub,
     size: 24,
-    href: "https://github.com/trishhhh13"
+    href: "https://github.com/trishhhh13?tab=repositories"
   },
   {
     id: 4,

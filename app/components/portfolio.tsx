@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const WORK = [
   { nm: "Ajjas", img: "/ajjasApp.jpg", link: "https://play.google.com/store/apps/details?id=com.ajjas" },
-  { nm: "Ajjas Website", img: "/ajjasWebsite.webp", link: "https://www.ajjas.com/" },
+  { nm: "Ajjas Website", img: "/ajjaswebsite.webp", link: "https://www.ajjas.com/" },
   { nm: "Ascian Solutions", img: "/ascian.png", link: "https://www.ascian.in/" },
   { nm: "Personal Project: Schedify", img: "/schedify.png", link: "https://github.com/trishhhh13/Schedify" },
   { nm: "Personal Project: JSON Linter", img: "/jsonlinter.png", link: "https://jsonlint-inky.vercel.app/" },
