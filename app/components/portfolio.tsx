@@ -1,13 +1,14 @@
 import React from 'react'
 import Text from './reusables/text'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const WORK = [
-  { nm: "Ajjas", img: "ajjasApp.jpg", link: "https://play.google.com/store/apps/details?id=com.ajjas" },
-  { nm: "Ajjas Website", img: "ajjasWebsite.webp", link: "https://www.ajjas.com/" },
-  { nm: "Ascian Solutions", img: "ascian.png", link: "https://www.ascian.in/" },
-  { nm: "Personal Project: Schedify", img: "schedify.png", link: "https://github.com/trishhhh13/Schedify" },
-  { nm: "Personal Project: JSON Linter", img: "jsonlinter.png", link: "https://jsonlint-inky.vercel.app/" },
+  { nm: "Ajjas", img: "/ajjasApp.jpg", link: "https://play.google.com/store/apps/details?id=com.ajjas" },
+  { nm: "Ajjas Website", img: "/ajjasWebsite.webp", link: "https://www.ajjas.com/" },
+  { nm: "Ascian Solutions", img: "/ascian.png", link: "https://www.ascian.in/" },
+  { nm: "Personal Project: Schedify", img: "/schedify.png", link: "https://github.com/trishhhh13/Schedify" },
+  { nm: "Personal Project: JSON Linter", img: "/jsonlinter.png", link: "https://jsonlint-inky.vercel.app/" },
 ]
 
 const Portfolio = () => {
@@ -23,7 +24,7 @@ const Portfolio = () => {
           return (
             <Link key={index} href={detail.link} className='w-[20%] m-10 overflow-hidden'>
               <div className='overflow-hidden rounded-3xl'>
-                <img src={detail.img} className='w-full aspect-square rounded-3xl hover:scale-125 transition-all' alt={detail.nm} />
+                <Image width={100} height={100} src={detail.img} className='w-full aspect-square rounded-3xl hover:scale-125 transition-all' alt={detail.nm} />
               </div>
               <p className='text-grullo mt-2'>{detail.nm}</p>
             </Link>

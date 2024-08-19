@@ -30,7 +30,7 @@ const Contact = () => {
         setMessage('');
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error);
         alert('Error sending message. Please try again later.');
       });
   };
@@ -39,7 +39,7 @@ const Contact = () => {
     <div className='bg-eerie py-40 w-full items-center'>
       <Text>Contact Me</Text>
       <p className='px-[15%] py-10'>
-        Feel free to reach out if you have any questions or opportunities for collaboration. I'm always open to discussing new projects, ideas, or ways we can work together to achieve your goals. Your feedback and inquiries are important to me, and I'll do my best to get back to you promptly.
+        Feel free to reach out if you have any questions or opportunities for collaboration. I&apos;m always open to discussing new projects, ideas, or ways we can work together to achieve your goals. Your feedback and inquiries are important to me, and I&apos;ll do my best to get back to you promptly.
       </p>
       <section className='flex px-[5%]'>
         <div className='flex flex-1 flex-col'>
