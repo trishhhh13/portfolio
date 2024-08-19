@@ -1,5 +1,7 @@
-import { caveat } from '@/app/layout';
 import React from 'react';
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({ subsets: ['cyrillic'] });
 
 const Text = (props:{children:string, className?:string}) => {
     const nmArr = props.children.split(" ");

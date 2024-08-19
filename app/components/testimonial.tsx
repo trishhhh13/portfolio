@@ -1,7 +1,10 @@
 import React from 'react'
 import Text from './reusables/text'
-import { caveat } from '../layout'
 import TestimonialCards from './reusables/testimonialCard'
+
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({ subsets: ['cyrillic'] });
 
 const Testimonial = () => {
   return (

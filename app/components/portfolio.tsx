@@ -1,6 +1,5 @@
 import React from 'react'
 import Text from './reusables/text'
-import { caveat } from '../layout'
 import Link from 'next/link'
 
 const WORK = [

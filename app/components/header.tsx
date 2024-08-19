@@ -1,13 +1,6 @@
 'use client';
 import React from 'react'
 import Text from './reusables/text';
-import { caveat } from '../layout';
-import { BiDownArrow, BiDownload } from 'react-icons/bi';
-import { FaDownload } from 'react-icons/fa';
-import { BsDownload } from 'react-icons/bs';
-import { FcDownload } from 'react-icons/fc';
-import { FiDownload, FiDownloadCloud } from 'react-icons/fi';
-import { GoDownload } from 'react-icons/go';
 import { GrDownload } from 'react-icons/gr';
 
 const HEADER_CONTENT = [

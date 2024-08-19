@@ -1,7 +1,8 @@
 import React from 'react'
-import { caveat } from '../layout'
 import Button from './reusables/button'
+import { Caveat } from 'next/font/google'
 
+const caveat = Caveat({ subsets: ['cyrillic'] });
 const About = () => {
   return (
     <div className='bg-raisin w-full py-32 flex px-[8%] justify-between'>

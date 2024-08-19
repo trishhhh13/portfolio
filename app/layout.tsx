@@ -1,13 +1,11 @@
-// app/layout.tsx (or _app.tsx if using the old file structure)
-
-import { Public_Sans, Caveat } from 'next/font/google';
+import { ReactNode } from 'react';
+import { Public_Sans } from 'next/font/google';
 import './globals.css';
 
 // Initialize fonts
-export const caveat = Caveat({ subsets: ['cyrillic'] });
-export const public_sans = Public_Sans({ subsets: ['latin'] });
+const public_sans = Public_Sans({ subsets: ['latin'] });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={`${public_sans.className}`}>

@@ -1,6 +1,8 @@
-import { caveat } from '@/app/layout'
 import React from 'react'
 import { BiCopyright } from 'react-icons/bi'
+import { Caveat } from 'next/font/google'
+
+const caveat = Caveat({ subsets: ['cyrillic'] });
 
 const Copyright = () => {
   return (

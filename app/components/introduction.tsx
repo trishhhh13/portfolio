@@ -3,8 +3,11 @@ import React from 'react'
 import Text from './reusables/text'
 import Social from './reusables/social';
 import Experience from './reusables/experience';
-import { public_sans } from '../layout';
 import Button from './reusables/button';
+
+import { Public_Sans } from 'next/font/google'
+
+const public_sans = Public_Sans({ subsets: ['latin'] });
 
 const Introduction = () => {
   return (

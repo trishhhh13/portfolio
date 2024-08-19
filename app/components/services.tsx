@@ -1,6 +1,5 @@
 import React from 'react'
 import Text from './reusables/text'
-import { caveat } from '../layout'
 import { BiData } from 'react-icons/bi'
 import { BsAndroid } from 'react-icons/bs'
 import { SiFrontendmentor } from 'react-icons/si'
