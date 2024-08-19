@@ -8,11 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+
+      colors: {
+        'grullo': '#a9947d', // This is the hexadecimal equivalent of rgb(169, 146, 125)
+        'umber': '#5e503f',
+        'eerie': '#1a1a1a',
+        'raisin': '#222222',
+        'charcoal': '#333333'
       },
+    },
+    keyframes: {
+      'slide-right': {
+        '0%': { transform: 'translateX(-100%)' },
+        '100%': { transform: 'translateX(0)' },
+      },
+      'slide-left': {
+        '0%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateX(0)' },
+      },
+    },
+    animation: {
+      'slide-right': 'slide-right 1s ease-in-out',
+      'slide-left': 'slide-left 1s ease-in-out',
     },
   },
   plugins: [],
