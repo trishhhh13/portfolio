@@ -36,7 +36,28 @@ p {
     text-wrap: balance;
   }
 }
+.tooltip {
+  /* position: relative; */
+  /* display: inline-block; */
+}
 
-.caveatText {
-  font-family: 'Caveat', cursive; /* Use the font name from `caveat.className` */
+.tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  line-height: 16px;
+  color: #fff;
+  background-color: black;
+  border-radius: 4px;
+  padding: 0px 5px;
+  margin: 0px;
+  font-size: 12px;
+  text-wrap: nowrap;
+
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

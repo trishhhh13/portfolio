@@ -65,7 +65,7 @@ const Header = () => {
     <nav className='z-20 py-6 px-20 flex justify-between shadow-sm shadow-[#251e16] text-lg fixed bg-black w-full top-0 content-center'>
       <Text>Trishala Kohade</Text>
       <div className='flex items-center'>
-        {HEADER_CONTENT.map((content) => <button onClick={() => handleScroll(content.conId)} key={content.id} className='hover:text-beaver ml-8'>{content.nm}</button>)}
+        {HEADER_CONTENT.map((content) => <button onClick={() => handleScroll(content.conId)} key={content.id} className='hover:text-grullo ml-8'>{content.nm}</button>)}
         <GrDownload className='ml-20' onClick={() => downloadResume()}/>
       </div>
     </nav>

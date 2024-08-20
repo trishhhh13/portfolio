@@ -26,7 +26,7 @@ const TESTIMONIALS = [
 
 const TestimonialCard = () => {
   return (
-    <div className='flex mt-20'>
+    <div className='flex mt-20 mx-10'>
       {TESTIMONIALS.map(testimonial => <div key={testimonial.id} className='flex flex-1 flex-col items-center bg-eerie mx-4 p-4 rounded-lg border-t-4 border-grullo'>
         <div className='bg-grullo w-32 aspect-square rounded-full flex items-center justify-cente my-6'>
           <div className='bg-black m-1 w-[95%] h-[95%] rounded-full flex items-center justify-center'>
