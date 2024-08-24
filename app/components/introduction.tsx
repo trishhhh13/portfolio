@@ -10,7 +10,7 @@ const nunito_sans = Nunito_Sans({ subsets: ['latin'] });
 
 const Introduction = () => {
   return (
-    <div className='flex text-3xl flex-col w-full mt-[30%] items-center intro'>
+    <div className='flex text-3xl flex-col w-full mt-60 items-center intro'>
       <p className='mb-6'>
         Hey! I&apos;m <span className='text-grullo'>Trishala Kohade</span>
       </p>
