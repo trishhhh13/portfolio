@@ -41,7 +41,7 @@ const Contact = () => {
       <p className='px-[15%] py-10'>
         Feel free to reach out if you have any questions or opportunities for collaboration. I&apos;m always open to discussing new projects, ideas, or ways we can work together to achieve your goals. Your feedback and inquiries are important to me, and I&apos;ll do my best to get back to you promptly.
       </p>
-      <section className='flex px-[5%]'>
+      <section className='flex px-[5%] services'>
         <div className='flex flex-1 flex-col'>
           <section>
             <div className='flex'>
@@ -54,7 +54,7 @@ const Contact = () => {
             </div>
           </section>
           <section>
-            <div className='flex mt-10'>
+            <div className='flex mt-10 mb-20'>
               <CiLocationOn size={30} />
               <div className='text-left ml-4 text-base'>
                 <p>Current Location</p>

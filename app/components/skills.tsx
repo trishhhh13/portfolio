@@ -51,8 +51,12 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className='flex w-full justify-around py-6 bg-eerie'>
-      {skills.map(skill => <Image width={100} height={150} key={skill.id} src={skill.nm} className='h-24 aspect-square' alt={skill.alt} />)}
+    <div className='overflow-hidden py-5 whitespace-nowrap bg-black'>
+      <div className='animate-loop-scroll inline-block'>
+        {skills.map(skill => <Image width={100} height={150} key={skill.id} src={skill.nm} className='inline-block' alt={skill.alt} />)}
+        {skills.map(skill => <Image width={100} height={150} key={skill.id} src={skill.nm} className='inline-block' alt={skill.alt} />)}
+      </div>
+
     </div>
   )
 }

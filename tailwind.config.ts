@@ -26,10 +26,15 @@ const config: Config = {
         '0%': { transform: 'translateX(100%)' },
         '100%': { transform: 'translateX(0)' },
       },
+      'loop-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
+      }
     },
     animation: {
       'slide-right': 'slide-right 1s ease-in-out',
       'slide-left': 'slide-left 1s ease-in-out',
+      'loop-scroll': 'loop-scroll 10s infinite linear'
     },
   },
   plugins: [],

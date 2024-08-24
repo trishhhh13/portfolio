@@ -36,10 +36,6 @@ p {
     text-wrap: balance;
   }
 }
-.tooltip {
-  /* position: relative; */
-  /* display: inline-block; */
-}
 
 .tooltiptext {
   visibility: hidden;
@@ -60,4 +56,66 @@ p {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.mobileHeader {
+    display: none;
+}
+
+@media only screen and (max-width: 1118px) {
+
+  .mobileHeader {
+    display: block;
+  }
+
+  .deskHeader {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about-content {
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-top: 90px;
+  }
+
+  .services, .testimonial {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-child {
+    width: 100%;
+    margin-top: 30px;
+    max-width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+.social {
+  width: 400px;
+}
+
+@media only screen and (max-width: 460px) {
+  .headerText {
+    font-size: 24px;
+  }
+  .social {
+    width: 300px;
+  }
+
+  .intro {
+    padding-top: 120px
+  }
 }

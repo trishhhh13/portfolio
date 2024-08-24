@@ -35,8 +35,8 @@ const Services = () => {
     <div className='bg-eerie w-full py-40'>
       <Text>What I Do For Clients</Text>
       <p className='px-[10%] pt-10'>I deliver tailored software solutions by enhancing user experiences through optimized performance and innovative features. My focus is on creating efficient, high-quality applications that meet client needs and exceed expectations.</p>
-      <div className='flex text-left w-full justify-around mt-24'>
-        {SERVICES.map(srvc => <div key={srvc.id} className='bg-raisin hover:bg-neutral-700 max-w-[20%] p-6 rounded-xl'>
+      <div className='flex text-left w-full justify-around mt-24 services'>
+        {SERVICES.map(srvc => <div key={srvc.id} className='bg-raisin hover:bg-neutral-700 max-w-[20%] p-6 rounded-xl services-child'>
           {srvc.icon}
           <p className='mt-10 text-2xl mb-4'>{srvc.nm}</p>
           <p>{srvc.desc}</p>

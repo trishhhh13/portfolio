@@ -30,8 +30,13 @@ const expertiseArr = [{
 
 const Experience = () => {
   return (
-    <div className='mt-24 max-h-20 bg-eerie flex justify-around w-[100%] p-10 items-center'>
-        {expertiseArr.map((expertise) => <p className='flex items-center' key={expertise.id}>{<expertise.icon/>} <span className='ml-2'>{expertise.nm}</span></p>)}
+    <div className='mt-24 whitespace-nowrap w-full bg-eerie py-5 items-center overflow-hidden'>
+      <div className='animate-loop-scroll inline-block'>
+        {expertiseArr.map((expertise) => <p className='items-center inline-block w-96' key={expertise.id}>{<expertise.icon className='inline-block'/>} <span className='ml-2 inline-block'>{expertise.nm}</span></p>)}
+      </div>
+      <div className='animate-loop-scroll inline-block'>
+        {expertiseArr.map((expertise) => <p className='items-center inline-block w-96' key={expertise.id}>{<expertise.icon className='inline-block'/>} <span className='ml-2 inline-block'>{expertise.nm}</span></p>)}
+      </div>
     </div>
   )
 }

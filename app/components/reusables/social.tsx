@@ -45,7 +45,7 @@ const HANDLES = [
 
 const Social = () => {
   return (
-    <div className='flex justify-around w-[30%] self-center bg-grullo rounded-full py-2 items-center mt-36'>
+    <div className='flex justify-around social self-center bg-grullo rounded-full py-2 items-center mt-36'>
       {HANDLES.map(handle => <Link key={handle.id} href={handle.href} target='blank' className='tooltip'>
         <handle.icon color='black' size={handle.size}/>
         <p className="tooltiptext">{handle.nm}</p>
