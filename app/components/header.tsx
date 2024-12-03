@@ -51,10 +51,10 @@ const Header = () => {
   };
 
   const downloadResume = () => {
-    const resumeUrl = '/Trishala_Kohade_SDE.pdf';
+    const resumeUrl = '/Trishala_Kohade_FE.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Trishala_Kohade_SDE.pdf';
+    link.download = 'Trishala_Kohade_FE.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
