@@ -40,7 +40,7 @@ const HANDLES = [
     icon: CgMail,
     size: 24,
     nm: "Email",
-    href: "mailto:Trishlakohade4@gmail.com"
+    href: "mailto:trishlakohade4@gmail.com"
   }
 ];
 

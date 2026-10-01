@@ -42,7 +42,7 @@ const Contact = () => {
       .catch((error) => {
         console.error(error);
         setIsSending(false);
-        alert('There was an issue sending your message. You can also directly email Trishlakohade4@gmail.com');
+        alert('There was an issue sending your message. You can also directly email trishlakohade4@gmail.com');
       });
   };
 
