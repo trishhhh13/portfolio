@@ -7,12 +7,12 @@ import Copyright from "./components/reusables/copyright";
 import Services from "./components/services";
 import Skills from "./components/skills";
 import Testimonial from "./components/testimonial";
-
-// pages/index.js
+import WorkExperience from "./components/workExperience";
+import Education from "./components/education";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center text-center">
+    <main className="flex flex-col items-center text-center w-full min-h-screen bg-[#0e0d0c] text-white">
       <Header />
       <section className="w-full" id="introduction">
         <Introduction />
@@ -20,11 +20,17 @@ export default function Home() {
       <section className="w-full" id="about">
         <About />
       </section>
+      <section className="w-full" id="experience">
+        <WorkExperience />
+      </section>
       <section className="w-full" id="skills">
         <Skills />
       </section>
       <section className="w-full" id="portfolio">
         <Portfolio />
+      </section>
+      <section className="w-full" id="education">
+        <Education />
       </section>
       <section className="w-full" id="services">
         <Services />

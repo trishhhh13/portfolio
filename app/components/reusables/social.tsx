@@ -1,5 +1,6 @@
+'use client';
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import { BsGithub, BsWhatsapp } from 'react-icons/bs';
 import { CgMail } from 'react-icons/cg';
 import { LiaLinkedin } from 'react-icons/lia';
@@ -8,50 +9,61 @@ import { SiLeetcode } from 'react-icons/si';
 const HANDLES = [
   {
     id: 1,
-    icon: SiLeetcode,
+    icon: LiaLinkedin,
     size: 24,
-    nm: "Leetcode",
-    href: "https://leetcode.com/u/trishhhh_13/"
+    nm: "LinkedIn",
+    href: "https://www.linkedin.com/in/Trishla-kohade/"
   },
   {
     id: 2,
-    icon: LiaLinkedin,
-    size: 34,
-    nm: "Linkedin",
-    href: "https://www.linkedin.com/in/trishala-kohade/"
+    icon: BsGithub,
+    size: 20,
+    nm: "GitHub",
+    href: "https://github.com/trishhhh13"
   },
   {
     id: 3,
-    icon: BsGithub,
-    size: 24,
-    nm: "Github",
-    href: "https://github.com/trishhhh13?tab=repositories"
+    icon: SiLeetcode,
+    size: 19,
+    nm: "LeetCode",
+    href: "https://leetcode.com/u/trishhhh_13/"
   },
   {
     id: 4,
     icon: BsWhatsapp,
-    size: 24,
-    nm: "Whatsapp",
-    href: "https://api.whatsapp.com/send?phone=7389178436"
+    size: 20,
+    nm: "WhatsApp",
+    href: "https://api.whatsapp.com/send?phone=917389178436"
   },
   {
     id: 5,
     icon: CgMail,
-    size: 34,
-    nm: "Mail",
-    href: "mailto:trishalakohade4@gmail.com"
+    size: 24,
+    nm: "Email",
+    href: "mailto:Trishlakohade4@gmail.com"
   }
-]
+];
 
 const Social = () => {
   return (
-    <div className='flex justify-around social self-center bg-grullo rounded-full py-2 items-center mt-36'>
-      {HANDLES.map(handle => <Link key={handle.id} href={handle.href} target='blank' className='tooltip'>
-        <handle.icon color='black' size={handle.size}/>
-        <p className="tooltiptext">{handle.nm}</p>
-      </Link>)}
+    <div className='flex items-center gap-3 bg-neutral-900/90 border border-grullo/30 px-5 py-2.5 rounded-full shadow-lg backdrop-blur-md'>
+      {HANDLES.map((handle) => (
+        <Link
+          key={handle.id}
+          href={handle.href}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='w-10 h-10 rounded-full flex items-center justify-center text-grullo hover:text-white hover:bg-white/10 transition-all duration-200 relative group'
+          aria-label={handle.nm}
+        >
+          <handle.icon size={handle.size} />
+          <span className='absolute -bottom-8 scale-0 group-hover:scale-100 transition-all text-[11px] bg-black text-white px-2 py-0.5 rounded shadow pointer-events-none whitespace-nowrap border border-white/10'>
+            {handle.nm}
+          </span>
+        </Link>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Social
+export default Social;
